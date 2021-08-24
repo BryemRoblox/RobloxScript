@@ -1,0 +1,176 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local BloxFruit1 = Instance.new("TextButton")
+local Tools = Instance.new("TextButton")
+local DarkHub = Instance.new("TextButton")
+local DeliverySimulator = Instance.new("TextButton")
+local JailBreak = Instance.new("TextButton")
+local LegendOfSpeed = Instance.new("TextButton")
+local ShootOut = Instance.new("TextButton")
+local Roville = Instance.new("TextButton")
+local MurderMistery2 = Instance.new("TextButton")
+local BloxFruit2 = Instance.new("TextButton")
+local Credit = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Frame.Position = UDim2.new(0.0952743888, 0, 0.161875948, 0)
+Frame.Size = UDim2.new(0, 1095, 0, 447)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+TextLabel.Size = UDim2.new(0, 1095, 0, 22)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Dictionnaire de Cheat"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+BloxFruit1.Name = "BloxFruit1"
+BloxFruit1.Parent = Frame
+BloxFruit1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BloxFruit1.Position = UDim2.new(0.119068496, 0, 0.134000018, 0)
+BloxFruit1.Size = UDim2.new(0, 100, 0, 50)
+BloxFruit1.Font = Enum.Font.SourceSans
+BloxFruit1.Text = "BloxFruit 1"
+BloxFruit1.TextColor3 = Color3.fromRGB(0, 0, 0)
+BloxFruit1.TextSize = 14.000
+BloxFruit1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://reaperking.xyz/bloxfruits", true))()
+end)
+
+Tools.Name = "Tools"
+Tools.Parent = Frame
+Tools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tools.Position = UDim2.new(0.408219188, 0, 0.1342282, 0)
+Tools.Size = UDim2.new(0, 200, 0, 50)
+Tools.Font = Enum.Font.SourceSans
+Tools.Text = "Tools"
+Tools.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tools.TextSize = 14.000
+Tools.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/Sniff-Hub/main/Sniff%20Hub'))()
+end)
+
+DarkHub.Name = "DarkHub"
+DarkHub.Parent = Frame
+DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.Position = UDim2.new(0.69806397, 0, 0.134000003, 0)
+DarkHub.Size = UDim2.new(0, 200, 0, 50)
+DarkHub.Font = Enum.Font.SourceSans
+DarkHub.Text = "DarkHub"
+DarkHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkHub.TextSize = 14.000
+DarkHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+DeliverySimulator.Name = "Delivery Simulator"
+DeliverySimulator.Parent = Frame
+DeliverySimulator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DeliverySimulator.Position = UDim2.new(0.119068488, 0, 0.462859064, 0)
+DeliverySimulator.Size = UDim2.new(0, 200, 0, 50)
+DeliverySimulator.Font = Enum.Font.SourceSans
+DeliverySimulator.Text = "Delivery Simulator"
+DeliverySimulator.TextColor3 = Color3.fromRGB(0, 0, 0)
+DeliverySimulator.TextSize = 14.000
+DeliverySimulator.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BryemRoblox/RobloxScript/main/Delivery%20Simulator", true))()
+end)
+
+JailBreak.Name = "JailBreak"
+JailBreak.Parent = Frame
+JailBreak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JailBreak.Position = UDim2.new(0.407652974, 0, 0.442724824, 0)
+JailBreak.Size = UDim2.new(0, 200, 0, 50)
+JailBreak.Font = Enum.Font.SourceSans
+JailBreak.Text = "JailBreak"
+JailBreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+JailBreak.TextSize = 14.000
+JailBreak.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BryemRoblox/RobloxScript/main/JailBreak", true))()
+end)
+
+LegendOfSpeed.Name = "LegendOfSpeed"
+LegendOfSpeed.Parent = Frame
+LegendOfSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegendOfSpeed.Position = UDim2.new(0.69806397, 0, 0.442724824, 0)
+LegendOfSpeed.Size = UDim2.new(0, 200, 0, 50)
+LegendOfSpeed.Font = Enum.Font.SourceSans
+LegendOfSpeed.Text = "Legend Of Speed"
+LegendOfSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+LegendOfSpeed.TextSize = 14.000
+LegendOfSpeed.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BryemRoblox/RobloxScript/main/Legend%20Of%20Speed", true))()
+end)
+
+ShootOut.Name = "Shoot Out"
+ShootOut.Parent = Frame
+ShootOut.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShootOut.Position = UDim2.new(0.69806397, 0, 0.753686786, 0)
+ShootOut.Size = UDim2.new(0, 200, 0, 50)
+ShootOut.Font = Enum.Font.SourceSans
+ShootOut.Text = "Shoot out"
+ShootOut.TextColor3 = Color3.fromRGB(0, 0, 0)
+ShootOut.TextSize = 14.000
+ShootOut.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BryemRoblox/RobloxScript/main/Shoot%20Out", true))()
+end)
+
+Roville.Name = "Roville"
+Roville.Parent = Frame
+Roville.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roville.Position = UDim2.new(0.406739771, 0, 0.753686786, 0)
+Roville.Size = UDim2.new(0, 200, 0, 50)
+Roville.Font = Enum.Font.SourceSans
+Roville.Text = "Roville"
+Roville.TextColor3 = Color3.fromRGB(0, 0, 0)
+Roville.TextSize = 14.000
+Roville.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BryemRoblox/RobloxScript/main/Roville", true))()
+end)
+
+MurderMistery2.Name = "Murder Mistery 2"
+MurderMistery2.Parent = Frame
+MurderMistery2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MurderMistery2.Position = UDim2.new(0.119068503, 0, 0.753686786, 0)
+MurderMistery2.Size = UDim2.new(0, 200, 0, 50)
+MurderMistery2.Font = Enum.Font.SourceSans
+MurderMistery2.Text = "Murder Mystery 2"
+MurderMistery2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MurderMistery2.TextSize = 14.000
+MurderMistery2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+end)
+
+BloxFruit2.Name = "BloxFruit2"
+BloxFruit2.Parent = Frame
+BloxFruit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BloxFruit2.Position = UDim2.new(0.210392699, 0, 0.134000018, 0)
+BloxFruit2.Size = UDim2.new(0, 100, 0, 50)
+BloxFruit2.Font = Enum.Font.SourceSans
+BloxFruit2.Text = "BloxFruit 2"
+BloxFruit2.TextColor3 = Color3.fromRGB(0, 0, 0)
+BloxFruit2.TextSize = 14.000
+BloxFruit2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BryemRoblox/BloxFruit2/main/BloxFruit2", true))()
+end)
+
+Credit.Parent = Frame
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.Position = UDim2.new(0.92694056, 0, 0.9751634, 0)
+Credit.Size = UDim2.new(0, 80, 0, 11)
+Credit.Font = Enum.Font.SourceSans
+Credit.Text = "By Bryan"
+Credit.TextColor3 = Color3.fromRGB(36, 36, 36)
+Credit.TextScaled = true
+Credit.TextSize = 14.000
+Credit.TextWrapped = true
