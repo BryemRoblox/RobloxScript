@@ -1,0 +1,15 @@
+local a = require(game:GetService("ReplicatedFirst")["_0xS0URC3X"].Shared.AimAssistSettings)
+a.MaxScreenCoverage = 999999
+a.MaxKDR = 99999999.99999999
+a.MaxRange = 999999999
+wait(0.1)
+for i,v in pairs(game:GetService("ReplicatedFirst")["_0xS0URC3X"].Shared.WeaponDataManager:GetDescendants()) do
+    local b = require(v)
+    b.Settings.MAX_AMMO = 99999999
+    b.Settings.MAX_DAMAGE = 99999
+    b.Settings.RECOIL_STRENGTH = 0
+    b.Settings.SPREAD = 0
+    b.Settings.RELOAD_TIME = 0
+    b.Settings.ROF = 3000
+    b.Settings.AUTOMATIC = true
+end
