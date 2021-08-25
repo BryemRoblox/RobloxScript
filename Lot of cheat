@@ -1,5 +1,7 @@
 -- By Bryan
 
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
 local Menu = Instance.new("ScreenGui")
 local Login = Instance.new("ImageLabel")
 local Title = Instance.new("TextLabel")
@@ -624,3 +626,15 @@ BloxFruit1_Roundify_12px_13.ImageColor3 = Color3.fromRGB(100, 100, 100)
 BloxFruit1_Roundify_12px_13.ScaleType = Enum.ScaleType.Slice
 BloxFruit1_Roundify_12px_13.SliceCenter = Rect.new(100, 100, 100, 100)
 BloxFruit1_Roundify_12px_13.SliceScale = 0.120
+
+mouse.KeyDown:connect(function(key)
+	if key:lower() == "p" or key:upper() == "P" then
+		MenuFrame.Visible = false
+	end
+end)
+
+mouse.KeyDown:connect(function(key)
+	if key:lower() == "m" or key:upper() == "M" then
+		MenuFrame.Visible = true
+	end
+end)
