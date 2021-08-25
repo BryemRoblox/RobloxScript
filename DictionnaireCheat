@@ -20,6 +20,7 @@ local BloxFruit2 = Instance.new("TextButton")
 local Credit = Instance.new("TextLabel")
 local DrinvingSimulator = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
+local mouse = game.Players.LocalPlayer:GetMouse()
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -263,4 +264,10 @@ TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
 	Dico.Visible = false
+end)
+
+mouse.KeyDown:connect(function(Key)
+	if Key == "p" then
+		Dico.Visible = true
+	end
 end)
