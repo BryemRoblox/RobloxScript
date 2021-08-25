@@ -1,5 +1,11 @@
+-- By Bryan
+
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local Login = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Pass = Instance.new("TextBox")
+local Log = Instance.new("TextButton")
+local Dico = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local BloxFruit1 = Instance.new("TextButton")
 local Tools = Instance.new("TextButton")
@@ -12,18 +18,74 @@ local Roville = Instance.new("TextButton")
 local MurderMistery2 = Instance.new("TextButton")
 local BloxFruit2 = Instance.new("TextButton")
 local Credit = Instance.new("TextLabel")
+local DrinvingSimulator = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-Frame.Position = UDim2.new(0.0952743888, 0, 0.161875948, 0)
-Frame.Size = UDim2.new(0, 1095, 0, 447)
-Frame.Active = true
-Frame.Draggable = true
+Login.Name = "Login"
+Login.Parent = ScreenGui
+Login.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Login.Position = UDim2.new(0.386071146, 0, 0.280931592, 0)
+Login.Size = UDim2.new(0, 300, 0, 300)
+Login.Active = true
+Login.Draggable = true
 
-TextLabel.Parent = Frame
+Title.Name = "Title"
+Title.Parent = Login
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 300, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Login"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Pass.Name = "Pass"
+Pass.Parent = Login
+Pass.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Pass.BorderColor3 = Color3.fromRGB(149, 149, 149)
+Pass.Position = UDim2.new(0.166666672, 0, 0.334166646, 0)
+Pass.Size = UDim2.new(0, 200, 0, 50)
+Pass.Font = Enum.Font.SourceSans
+Pass.Text = "Password"
+Pass.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pass.TextScaled = true
+Pass.TextSize = 14.000
+Pass.TextWrapped = true
+
+Log.Name = "Log"
+Log.Parent = Login
+Log.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Log.BorderColor3 = Color3.fromRGB(149, 149, 149)
+Log.Position = UDim2.new(0.166666672, 0, 0.666666687, 0)
+Log.Size = UDim2.new(0, 200, 0, 50)
+Log.Font = Enum.Font.SourceSans
+Log.Text = "Login"
+Log.TextColor3 = Color3.fromRGB(255, 255, 255)
+Log.TextScaled = true
+Log.TextSize = 14.000
+Log.TextWrapped = true
+Log.MouseButton1Down:connect(function()
+	if Pass.Text == "Bryan" then
+		Login.Visible = false
+		Dico.Visible = true
+	end
+end)
+
+Dico.Name = "Dico"
+Dico.Parent = ScreenGui
+Dico.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Dico.Position = UDim2.new(0.0952743888, 0, 0.161875948, 0)
+Dico.Size = UDim2.new(0, 1095, 0, 447)
+Dico.Visible = false
+Dico.Active = true
+Dico.Draggable = true
+
+TextLabel.Parent = Dico
 TextLabel.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
 TextLabel.Size = UDim2.new(0, 1095, 0, 22)
 TextLabel.Font = Enum.Font.SourceSans
@@ -34,7 +96,7 @@ TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
 BloxFruit1.Name = "BloxFruit1"
-BloxFruit1.Parent = Frame
+BloxFruit1.Parent = Dico
 BloxFruit1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 BloxFruit1.Position = UDim2.new(0.119068496, 0, 0.134000018, 0)
 BloxFruit1.Size = UDim2.new(0, 100, 0, 50)
@@ -47,7 +109,7 @@ BloxFruit1.MouseButton1Down:connect(function()
 end)
 
 Tools.Name = "Tools"
-Tools.Parent = Frame
+Tools.Parent = Dico
 Tools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Tools.Position = UDim2.new(0.408219188, 0, 0.1342282, 0)
 Tools.Size = UDim2.new(0, 200, 0, 50)
@@ -60,7 +122,7 @@ Tools.MouseButton1Down:connect(function()
 end)
 
 DarkHub.Name = "DarkHub"
-DarkHub.Parent = Frame
+DarkHub.Parent = Dico
 DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DarkHub.Position = UDim2.new(0.69806397, 0, 0.134000003, 0)
 DarkHub.Size = UDim2.new(0, 200, 0, 50)
@@ -73,7 +135,7 @@ DarkHub.MouseButton1Down:connect(function()
 end)
 
 DeliverySimulator.Name = "Delivery Simulator"
-DeliverySimulator.Parent = Frame
+DeliverySimulator.Parent = Dico
 DeliverySimulator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DeliverySimulator.Position = UDim2.new(0.119068488, 0, 0.462859064, 0)
 DeliverySimulator.Size = UDim2.new(0, 200, 0, 50)
@@ -86,7 +148,7 @@ DeliverySimulator.MouseButton1Down:connect(function()
 end)
 
 JailBreak.Name = "JailBreak"
-JailBreak.Parent = Frame
+JailBreak.Parent = Dico
 JailBreak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 JailBreak.Position = UDim2.new(0.407652974, 0, 0.442724824, 0)
 JailBreak.Size = UDim2.new(0, 200, 0, 50)
@@ -98,8 +160,8 @@ JailBreak.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/BryemRoblox/RobloxScript/main/JailBreak", true))()
 end)
 
-LegendOfSpeed.Name = "LegendOfSpeed"
-LegendOfSpeed.Parent = Frame
+LegendOfSpeed.Name = "Legend Of Speed"
+LegendOfSpeed.Parent = Dico
 LegendOfSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LegendOfSpeed.Position = UDim2.new(0.69806397, 0, 0.442724824, 0)
 LegendOfSpeed.Size = UDim2.new(0, 200, 0, 50)
@@ -112,7 +174,7 @@ LegendOfSpeed.MouseButton1Down:connect(function()
 end)
 
 ShootOut.Name = "Shoot Out"
-ShootOut.Parent = Frame
+ShootOut.Parent = Dico
 ShootOut.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ShootOut.Position = UDim2.new(0.69806397, 0, 0.753686786, 0)
 ShootOut.Size = UDim2.new(0, 200, 0, 50)
@@ -125,7 +187,7 @@ ShootOut.MouseButton1Down:connect(function()
 end)
 
 Roville.Name = "Roville"
-Roville.Parent = Frame
+Roville.Parent = Dico
 Roville.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Roville.Position = UDim2.new(0.406739771, 0, 0.753686786, 0)
 Roville.Size = UDim2.new(0, 200, 0, 50)
@@ -138,7 +200,7 @@ Roville.MouseButton1Down:connect(function()
 end)
 
 MurderMistery2.Name = "Murder Mistery 2"
-MurderMistery2.Parent = Frame
+MurderMistery2.Parent = Dico
 MurderMistery2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MurderMistery2.Position = UDim2.new(0.119068503, 0, 0.753686786, 0)
 MurderMistery2.Size = UDim2.new(0, 200, 0, 50)
@@ -151,7 +213,7 @@ MurderMistery2.MouseButton1Down:connect(function()
 end)
 
 BloxFruit2.Name = "BloxFruit2"
-BloxFruit2.Parent = Frame
+BloxFruit2.Parent = Dico
 BloxFruit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 BloxFruit2.Position = UDim2.new(0.210392699, 0, 0.134000018, 0)
 BloxFruit2.Size = UDim2.new(0, 100, 0, 50)
@@ -163,7 +225,8 @@ BloxFruit2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/BryemRoblox/BloxFruit2/main/BloxFruit2", true))()
 end)
 
-Credit.Parent = Frame
+Credit.Name = "Credit"
+Credit.Parent = Dico
 Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Credit.BackgroundTransparency = 1.000
 Credit.Position = UDim2.new(0.92694056, 0, 0.9751634, 0)
@@ -174,3 +237,30 @@ Credit.TextColor3 = Color3.fromRGB(36, 36, 36)
 Credit.TextScaled = true
 Credit.TextSize = 14.000
 Credit.TextWrapped = true
+
+DrinvingSimulator.Name = "Drinving Simulator"
+DrinvingSimulator.Parent = Dico
+DrinvingSimulator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DrinvingSimulator.Position = UDim2.new(0.408219188, 0, 0.926174402, 0)
+DrinvingSimulator.Size = UDim2.new(0, 200, 0, 33)
+DrinvingSimulator.Font = Enum.Font.SourceSans
+DrinvingSimulator.Text = "Driving Simulator"
+DrinvingSimulator.TextColor3 = Color3.fromRGB(0, 0, 0)
+DrinvingSimulator.TextSize = 14.000
+DrinvingSimulator.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/vzffWTq4", true))()
+end)
+
+TextButton.Parent = Dico
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.964383602, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 39, 0, 22)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	Dico.Visible = false
+end)
