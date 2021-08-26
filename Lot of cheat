@@ -39,6 +39,7 @@ local JailBreak = Instance.new("TextButton")
 local BloxFruit1_Roundify_12px_12 = Instance.new("ImageLabel")
 local ElectricStateDarkRP = Instance.new("TextButton")
 local BloxFruit1_Roundify_12px_13 = Instance.new("ImageLabel")
+local Info = Instance.new("TextLabel")
 
 
 Menu.Name = "Menu"
@@ -626,6 +627,16 @@ BloxFruit1_Roundify_12px_13.ImageColor3 = Color3.fromRGB(100, 100, 100)
 BloxFruit1_Roundify_12px_13.ScaleType = Enum.ScaleType.Slice
 BloxFruit1_Roundify_12px_13.SliceCenter = Rect.new(100, 100, 100, 100)
 BloxFruit1_Roundify_12px_13.SliceScale = 0.120
+
+Info.Name = "Info"
+Info.Parent = MenuFrame
+Info.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Info.Position = UDim2.new(0, 0, 1, 0)
+Info.Size = UDim2.new(0, 300, 0, 23)
+Info.Font = Enum.Font.SourceSans
+Info.Text = "Press \"p\" for close and \"m\" for open"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 14.000
 
 mouse.KeyDown:connect(function(key)
 	if key:lower() == "p" or key:upper() == "P" then
