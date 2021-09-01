@@ -1,5 +1,5 @@
 local args = {
-    [1] = "NOOB AutoFarm"
+    [1] = "AutoFarm = Noob"
 }
 
 game:GetService("ReplicatedStorage").Remotes.SetStoreName:FireServer(unpack(args))
