@@ -3,3 +3,15 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Remotes.SetStoreName:FireServer(unpack(args))
+
+local tkt = 0
+
+repeat 
+	local args = {
+    	[1] = 1,
+    	[2] = CFrame.new(Vector3.new(1831.6829833984, 3.3439812660217, -1871.7279052734), Vector3.new(0.325568318367, -0, 0.94551849365234))
+	}
+	
+	game:GetService("ReplicatedStorage").Remotes.BuyVehicle:InvokeServer(unpack(args))
+	tkt = tkt + 1
+until tkt == 20
